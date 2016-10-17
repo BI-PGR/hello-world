@@ -9,8 +9,8 @@ set(RST "${Esc}[m")
 
 if(NOT EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/../pgr-framework")
   message(FATAL_ERROR
-  "${RED}Failed to find ../pgr-framework${RST}, fetch the repo using\n"
-  "\tgit clone https://github.com/bi-pgr/pgr-framewor\n"
+  "${RED}Failed to find pgr-framework${RST}, fetch the repo using\n"
+  "\tgit clone https://github.com/bi-pgr/pgr-framework\n"
   "next to the folder containing this project.")
 endif()
 
