@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0)
 
-project(hello-world)
+project(lesson-01)
 
 # Find pgr-framework
 string(ASCII 27 Esc)
