@@ -73,10 +73,15 @@ void draw() {
 int main(int argc, char** argv) {
   glutInit(&argc, argv);
 
+#ifndef __APPLE__
   glutInitContextVersion(pgr::OGL_VER_MAJOR, pgr::OGL_VER_MINOR);
   glutInitContextFlags(GLUT_FORWARD_COMPATIBLE);
 
   glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH);
+#else
+  glutInitDisplayMode(GLUT_3_2_CORE_PROFILE | GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH);
+#endif
+
   glutInitWindowSize(WIN_WIDTH, WIN_HEIGHT);
   glutCreateWindow(WIN_TITLE);
 
